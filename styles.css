@@ -5,17 +5,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .navigation {
-  height: 50px;
+  height: 70px;
   background: black;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .brand {
   position: absolute;
-  padding-left: 20px;
   float: left;
   line-height: 55px;
   text-transform: uppercase;
   font-size: 1.4em;
+  width: fit-content;
+}
+.nav_logo {
+  max-width: 130px;
+  max-height: 30px;
+  letter-spacing: -1px;
 }
 .brand a,
 .brand a:visited {
@@ -23,8 +28,10 @@ body {
   text-decoration: none;
 }
 .nav-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  /* max-width: 1000px; */
+  margin-left: 70px;
+
+  margin-right: 70px;
 }
 nav {
   float: right;
@@ -68,7 +75,7 @@ nav ul li ul li {
   min-width: 190px;
 }
 nav ul li ul li a {
-  padding: 15px;
+  padding: 10px;
   line-height: 20px;
 }
 .navbar-dropdown {
@@ -122,7 +129,7 @@ nav ul li ul li a {
 #navbar-toggle {
   position: absolute;
   left: 18px;
-  top: 15px;
+  top: 26px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
 }
@@ -161,9 +168,219 @@ nav ul li ul li a {
 #home {
   color: #ff0066;
 }
-#consul {
+
+.dropbtn {
+  color: white;
+  padding: 8px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  margin-top: 9px;
+  border-radius: 5px;
   background-color: #ff0066;
   border: none;
-  border-radius: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* ****************************************************************************** */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1270px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  /* justify-content: center; */
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 100%;
+  padding: 0 4px;
+  /* background-color: #bbbbbb; */
+  /* margin: 1px; */
+}
+#footer_logo {
+  width: 200px;
+  height: 60px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 30px;
+}
+.footer-col p {
+  color: #bbbbbb;
+}
+.in_line {
+  display: flex;
+}
+#abc {
+  margin: 5px;
+  margin-right: 35px;
+  color: #ff0066;
+  font-size: 15px;
+}
+#abcd {
+  margin: 5px;
+  margin-right: 5px;
+  color: white;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  /* background-color: #e91e63; */
+
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+#facebook {
+  color: #ff0066;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.social-links {
+  margin-top: 30px;
+}
+.foot_copy {
+  color: #bbbbbb;
+  margin-top: 2rem;
+}
+.footer-col .social-links a {
+  display: inline-block;
   height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+.fieldInput {
+  display: block;
+  margin: 20px 0px 0px 40px;
+  width: 300px;
+  height: 25px;
+  position: relative;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 35px;
+  overflow: hidden;
+}
+.form-input {
+  width: 200px;
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  font-size: 9px;
+  color: #6a7c92;
+  &:focus {
+    outline: none;
+  }
+}
+.form-submit {
+  font-size: 12px;
+  color: black;
+  position: absolute;
+  background-color: white;
+
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 42px;
+  border-radius: 17px 17px 17px 1px;
+  border: none;
+  /* background: none; */
+  box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
 }
