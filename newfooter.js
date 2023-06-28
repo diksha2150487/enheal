@@ -1,16 +1,13 @@
-console.log("hello");
-let foter = document.querySelector("#foter");
-let temp = document.createElement("temp");
-temp.innerHTML = `<footer>
-    <section class="footer">
+document.write(`<footer>
+<section class="footer">
     <div class="container">
       <div class="row">
         <div class="footer-col">
           <img
-            src="./images/WhatsApp Image 2023-06-28 at 9.36.46 PM.jpeg"
+            src="./images/WhatsApp Image 2023-06-25 at 11.13.13 PM.jpeg"
             id="footer_logo"
           />
-          <p >
+          <p>
             Core values are the fundamental beliefs of a person or
             organization . The core value are the guiding prin ples that
             dictates behavior and action suas labore saperet has there any
@@ -110,5 +107,5 @@ temp.innerHTML = `<footer>
       </div>
     </div>
   </section>
-    </footer>`;
-temp.appendChild(temp.content);
+    </footer>`);
+
